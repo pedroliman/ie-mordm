@@ -37,7 +37,7 @@ print(output)
 # Queue Model
 # Provide the R file and function name
 model = RModel("queue_model.R", "mm1_eval", RCMD=r"/usr/lib/R/bin/R")
-
+    
 # The parameter names must match the R arguments exactly
 model.parameters = [Parameter("lambda"),
                     Parameter("mu"),
@@ -46,8 +46,8 @@ model.parameters = [Parameter("lambda"),
 # List all outputs from the R function, which should return these values either as
 # an unnamed array in the given order (e.g., c(max_P, utility, ...)) or as a named
 # list (e.g., list(max_P=..., utility=..., ...)).
-model.responses = [Response("RO_ResourceUtilization", Response.MAXIMIZE),
-                   Response("Lq_MeanNumberInQueue", Response.MINIMIZE)]
+model.responses = [Response("RO", Response.MAXIMIZE),
+                   Response("Lq", Response.MINIMIZE)]
 
 # Specify the levers
 model.levers = [RealLever("lambda", 1/200, 2, length=1),

@@ -10,17 +10,17 @@ mm1_eval = function(lambda=1/4, mu=1/3, n=0) {
   
   list(
     Throughput = queue_model$Throughput,
-    RO_ResourceUtilization = queue_model$RO,
-    VNq_VarianceOfNumberInQueue = queue_model$VNq,
-    Lq_MeanNumberInQueue = queue_model$Lq
-    # ,Wq = queue_model$Wq,
-    # VTq = queue_model$VTq,
-    # L = queue_model$L,
-    # VN = queue_model$VN,
-    # W = queue_model$VN,
-    # VT = queue_model$VT,
-    # Wqq = queue_model$Wqq,
-    # Lqq = queue_model$Lqq
+    RO = queue_model$RO,
+    VNq = queue_model$VNq,
+    Lq = queue_model$Lq,
+    Wq = queue_model$Wq,
+    VTq = queue_model$VTq,
+    L = queue_model$L,
+    VN = queue_model$VN,
+    W = queue_model$VN,
+    VT = queue_model$VT,
+    Wqq = queue_model$Wqq,
+    Lqq = queue_model$Lqq
     )
 }
 
