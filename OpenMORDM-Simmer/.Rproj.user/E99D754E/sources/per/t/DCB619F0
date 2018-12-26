@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1545653378792.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1156634039",
+    "id" : "DCB619F0",
+    "lastKnownWriteTime" : 1545656151,
+    "last_content_update" : 1545656151540,
+    "path" : "C:/dev/des-mordm/OpenMORDM-Simmer/lake_problem.R",
+    "project_path" : "lake_problem.R",
+    "properties" : {
+        "cursorPosition" : "48,9",
+        "scrollLine" : "41",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,14 @@
+# Using Python within R
+library(reticulate)
+
+# Importing Rhodium Modules:
+math = import("math")
+np = import("numpy")
+mpl = import("matplotlib")
+plt = import("matplotlib.pyplot")
+rhodium = import("rhodium")
+root = import("scipy.optimize") # brentq
+
+source_python("lake_model.py")
+
+

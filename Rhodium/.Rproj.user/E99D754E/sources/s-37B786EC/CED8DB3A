@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1545659655660.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CED8DB3A",
+    "lastKnownWriteTime" : 1545660024,
+    "last_content_update" : 1545660024610,
+    "path" : "C:/dev/des-mordm/Rhodium/lake_model.py",
+    "project_path" : "lake_model.py",
+    "properties" : {
+        "cursorPosition" : "75,0",
+        "scrollLine" : "66",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "python"
+}
