@@ -1,29 +1,27 @@
 # Queue Libraries
 
-library(queuecomputer) # permite modelos complexos, é computacionalmente eficiente.
-library(queueing) # permite modelos markovianos
+#library(queuecomputer) # permite modelos complexos, é computacionalmente eficiente.
+#library(queueing) # permite modelos markovianos
 
 mm1_eval = function(lambda=1/4, mu=1/3, n=0) {
+  model_input = queueing::NewInput.MM1(lambda = lambda, mu = mu, n = n)
   
-
-  model_input = NewInput.MM1(lambda = lambda, mu = mu, n = n)
-  
-  queue_model = QueueingModel(x = model_input)
+  queue_model = queueing::QueueingModel(x = model_input)
   
   list(
     Throughput = queue_model$Throughput,
     RO_ResourceUtilization = queue_model$RO,
     VNq_VarianceOfNumberInQueue = queue_model$VNq,
-    Lq_MeanNumberInQueue = queue_model$Lq,
-    Wq = queue_model$Wq,
-    VTq = queue_model$VTq,
-    L = queue_model$L,
-    VN = queue_model$VN,
-    W = queue_model$VN,
-    VT = queue_model$VT,
-    Wqq = queue_model$Wqq,
-    Lqq = queue_model$Lqq)
-    
+    Lq_MeanNumberInQueue = queue_model$Lq
+    # ,Wq = queue_model$Wq,
+    # VTq = queue_model$VTq,
+    # L = queue_model$L,
+    # VN = queue_model$VN,
+    # W = queue_model$VN,
+    # VT = queue_model$VT,
+    # Wqq = queue_model$Wqq,
+    # Lqq = queue_model$Lqq
+    )
 }
 
 lake.eval <- function(pollution_limit, samples=100, days=100, b=0.42, q=2, mean=0.02,
